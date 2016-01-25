@@ -1,0 +1,30 @@
+\documentclass[11pt]{article}
+\usepackage{times}
+
+\begin{document}
+
+\textbf{Question 1}\\\\
+\textit{compare} is the box that takes two votes and returns true or false.
+\\
+\\
+\underline{run-off}\\
+If there are two votes\\
+\indent \underline{compare} the votes\\
+\indent if they are the same place the votes into one pile\\
+\indent else place the votes into two separate sub-piles\\
+Else if there are more than two votes\\
+\indent Divide the votes into two piles\\
+\indent \underline{merge-run} the \underline{run-off} of both piles
+\\
+\\
+\underline{merge-run}\\
+For every sub-pile in the first pile\\
+\indent For every sub-pile in the second pile\\
+\indent\indent \underline{compare} one vote from each sub-pile\\
+\indent\indent if they are the same, combine the sub-piles\\
+\indent\indent else continue onto the next sub-pile\\
+all remaining sub-piles comprise the new pile
+
+
+\end{document}
+
